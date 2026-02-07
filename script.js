@@ -65,10 +65,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const yesBtn1 = document.getElementById('yesBtn1');
     yesBtn1.textContent = config.questions.first.yesBtn;
     yesBtn1.addEventListener('mouseenter', () => moveButton(yesBtn1));
+    yesBtn1.addEventListener('mouseenter', () => increaseSizeOfSecretAnswerBtn());
     
     const noBtn1 = document.getElementById('noBtn1');
     noBtn1.textContent = config.questions.first.noBtn;
     noBtn1.addEventListener('mouseenter', () => moveButton(noBtn1));
+    noBtn1.addEventListener('mouseenter', () => increaseSizeOfSecretAnswerBtn());
 
     document.getElementById('question1Text').textContent = config.questions.first.text;
     document.getElementById('secretAnswerBtn').textContent = config.questions.first.secretAnswer;
@@ -269,3 +271,12 @@ function setupMusicPlayer(music) {
         }
     });
 } 
+
+// Increase size of hidden button
+function increaseSizeOfSecretAnswerBtn() {
+    const secretAnswerBtn = document.querySelector('#secretAnswerBtn');
+        if (secretAnswerBtn) {
+            const currentFontSize = parseInt(window.getComputedStyle(secretAnswerBtn).fontSize);
+            secretAnswerBtn.style.fontSize = (currentFontSize + 2) + "px"; // Увеличава шрифта с 2px
+        }
+}
