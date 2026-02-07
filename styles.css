@@ -280,7 +280,7 @@ h2 {
 
 
 .celebration-text {
-    font-size: 3em;
+    font-size: 1.5em;
     color: #ff4757;
     font-weight: bold;
     margin: 30px 0;
@@ -316,3 +316,10 @@ h2 {
     transform: scale(1.05);
     background: var(--secondary-color);
 } 
+
+.celebration-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+}
