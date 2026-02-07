@@ -5,11 +5,11 @@
 const CONFIG = {
     // Your Valentine's name that will appear in the title
     // Example: "Jade", "Sarah", "Mike"
-    valentineName: "Jade",
+    valentineName: "Кот",
 
     // The title that appears in the browser tab
     // You can use emojis! 💝 💖 💗 💓 💞 💕
-    pageTitle: "Will You Be My Valentine? 💝",
+    pageTitle: "За Тина? 💝",
 
     // Floating emojis that appear in the background
     // Find more emojis at: https://emojipedia.org
@@ -22,35 +22,35 @@ const CONFIG = {
     // Customize each question and its possible responses
     questions: {
         first: {
-            text: "Do you like me?",                                    // First interaction
-            yesBtn: "Yes",                                             // Text for "Yes" button
-            noBtn: "No",                                               // Text for "No" button
-            secretAnswer: "I don't like you, I love you! ❤️"           // Secret hover message
+            text: "Харесваш ли ме?",                                    // First interaction
+            yesBtn: "Да",                                             // Text for "Yes" button
+            noBtn: "Не",                                               // Text for "No" button
+            secretAnswer: "Не те харесвам, обичам те! ❤️"           // Secret hover message
         },
         second: {
-            text: "How much do you love me?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
+            text: "Колко много ме обичаш?",                          // For the love meter
+            startText: "Толкова много!",                                   // Text before the percentage
+            nextBtn: "Следващ ❤️"                                         // Text for the next button
         },
         third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+            text: "Ще бъдеш ли моята валентинка на 14ти Февруари 2026 г.? 🌹", // The big question!
+            yesBtn: "Да!",                                             // Text for "Yes" button
+            noBtn: "Не"                                                 // Text for "No" button
         }
     },
 
     // Love meter messages
     // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows when they go past 5000%
-        high: "To infinity and beyond! 🚀💝",              // Shows when they go past 1000%
-        normal: "And beyond! 🥰"                           // Shows when they go past 100%
+        extreme: "Ехее ти ме обичаш толкова много?? 🥰🚀🌕💝",      // Shows when they go past 5000%
+        high: "До луната и обратно! 🚀🌕💝",                        // Shows when they go past 1000%
+        normal: "Отвъд всичко, което виждаш! 🥰"                     // Shows when they go past 100%
     },
 
     // Messages that appear after they say "Yes!"
     celebration: {
-        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
+        title: "Аз съм най-щастливият мъж на земята! 😘🎉💝💖💝💓",
+        message: "Ела сега при мен да те изненадам с една голяма гореща прегръдка и страстна целувка!",
         emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
     },
 
@@ -78,10 +78,10 @@ const CONFIG = {
     music: {
         enabled: true,                     // Music feature is enabled
         autoplay: true,                    // Try to autoplay (note: some browsers may block this)
-        musicUrl: "https://res.cloudinary.com/dncywqfpb/video/upload/v1738399057/music_qrhjvy.mp3", // Music streaming URL
+        musicUrl: "https://cs1.mp3.pm/listen/137226265/UjFLc0U5QlEyMEFsdXBqMy85eGsycGdEaVFTbEJhYlBBU1gxQ29mdWRTSXc0Q1FwNWptY0lKUStQMnZxTDV2NHQxZWZqRTE4eTVIRGRFd0tpWnN0Rjl4bXg4aDMwWlNhb2t2WC80OUU0SzNpditCZk9TaW1LaThUUFdsYXpuQUQ/Pavell_Venci_Venc_feat._Mihaela_Fileva_-_Lyubov_(mp3.pm).mp3", // Music streaming URL
         startText: "🎵 Play Music",        // Button text to start music
         stopText: "🔇 Stop Music",         // Button text to stop music
-        volume: 0.5                        // Volume level (0.0 to 1.0)
+        volume: 0.4                        // Volume level (0.0 to 1.0)
     }
 };
 
