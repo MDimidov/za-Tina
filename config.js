@@ -79,8 +79,8 @@ const CONFIG = {
         enabled: true,                     // Music feature is enabled
         autoplay: true,                    // Try to autoplay (note: some browsers may block this)
         musicUrl: "https://cs1.mp3.pm/listen/137226265/UjFLc0U5QlEyMEFsdXBqMy85eGsycGdEaVFTbEJhYlBBU1gxQ29mdWRTSXc0Q1FwNWptY0lKUStQMnZxTDV2NHQxZWZqRTE4eTVIRGRFd0tpWnN0Rjl4bXg4aDMwWlNhb2t2WC80OUU0SzNpditCZk9TaW1LaThUUFdsYXpuQUQ/Pavell_Venci_Venc_feat._Mihaela_Fileva_-_Lyubov_(mp3.pm).mp3", // Music streaming URL
-        startText: "🎵 Play Music",        // Button text to start music
-        stopText: "🔇 Stop Music",         // Button text to stop music
+        startText: "🎵 Пусни музика",        // Button text to start music
+        stopText: "🔇 Спри музиката",         // Button text to stop music
         volume: 0.4                        // Volume level (0.0 to 1.0)
     }
 };

@@ -62,9 +62,17 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('valentineTitle').textContent = `${config.valentineName}, любов моя...`;
     
     // Set first question texts
+    const yesBtn1 = document.getElementById('yesBtn1');
+    yesBtn1.textContent = config.questions.first.yesBtn;
+    yesBtn1.addEventListener('mouseenter', () => moveButton(yesBtn1));
+    
+    const noBtn1 = document.getElementById('noBtn1');
+    noBtn1.textContent = config.questions.first.noBtn;
+    noBtn1.addEventListener('mouseenter', () => moveButton(noBtn1));
+
     document.getElementById('question1Text').textContent = config.questions.first.text;
-    document.getElementById('yesBtn1').textContent = config.questions.first.yesBtn;
-    document.getElementById('noBtn1').textContent = config.questions.first.noBtn;
+    document.getElementById('secretAnswerBtn').textContent = config.questions.first.secretAnswer;
+    document.getElementById('question1Text').textContent = config.questions.first.text;
     document.getElementById('secretAnswerBtn').textContent = config.questions.first.secretAnswer;
     
     // Set second question texts
@@ -75,7 +83,10 @@ window.addEventListener('DOMContentLoaded', () => {
     // Set third question texts
     document.getElementById('question3Text').textContent = config.questions.third.text;
     document.getElementById('yesBtn3').textContent = config.questions.third.yesBtn;
-    document.getElementById('noBtn3').textContent = config.questions.third.noBtn;
+    
+    const noBtn3 = document.getElementById('noBtn3');
+    noBtn3.textContent = config.questions.third.noBtn;
+    noBtn3.addEventListener('mouseenter', () => moveButton(noBtn3));
 
     // Create initial floating elements
     createFloatingElements();
