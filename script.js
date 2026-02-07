@@ -92,7 +92,7 @@ window.addEventListener('DOMContentLoaded', () => {
     createFloatingElements();
 
     // Setup music player
-    setupMusicPlayer();
+    setupMusicPlayer(config.music.romanceMusicUrl);
 });
 
 // Create floating hearts and bears
@@ -194,9 +194,27 @@ function celebrate() {
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
     document.getElementById('celebrationMessage').textContent = config.celebration.message;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
+    document.getElementById('celebrationNextBtn').textContent = config.celebration.nextBtn;
     
     // Create heart explosion effect
     createHeartExplosion();
+}
+
+// Final celebration function
+function finalCelebrate() {
+    document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));
+    document.getElementById('celebration').classList.add('hidden');
+
+    const celebration = document.getElementById('finalCelebration');
+    celebration.classList.remove('hidden');
+    
+    // Set celebration messages
+    document.getElementById('finalCelebrationTitle').textContent = config.finalCelebration.title;
+    document.getElementById('finalCelebrationImage').src = config.finalCelebration.imageUrl;
+    
+    // Create heart explosion effect
+    createHeartExplosion();
+    setupMusicPlayer(config.music.eroticMusicPath);
 }
 
 // Create heart explosion animation
@@ -212,7 +230,7 @@ function createHeartExplosion() {
 }
 
 // Music Player Setup
-function setupMusicPlayer() {
+function setupMusicPlayer(music) {
     const musicControls = document.getElementById('musicControls');
     const musicToggle = document.getElementById('musicToggle');
     const bgMusic = document.getElementById('bgMusic');
@@ -225,7 +243,7 @@ function setupMusicPlayer() {
     }
 
     // Set music source and volume
-    musicSource.src = config.music.musicUrl;
+    musicSource.src = music;
     bgMusic.volume = config.music.volume || 0.5;
     bgMusic.load();
 

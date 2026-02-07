@@ -51,8 +51,14 @@ const CONFIG = {
     celebration: {
         title: "Аз съм най-щастливият мъж на земята! 😘🎉💝💖💝💓",
         message: "Ела сега при мен да те изненадам с една голяма гореща прегръдка и страстна целувка!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
+        emojis: "🎁💖🤗💝💋❤️💕",  // These will bounce around
+        nextBtn: "Или ела на горещата оферта! 🎉"  // Button text for next surprise (if you want to add more)
     },
+
+    finalCelebration: {
+        title: "Ела да те изпапкам! 😏🤤👉👌😈",
+        imageUrl: "./data/rizz.gif",
+    }, 
 
     // Color scheme for the website
     // Use https://colorhunt.co or https://coolors.co to find beautiful color combinations
@@ -78,7 +84,8 @@ const CONFIG = {
     music: {
         enabled: true,                     // Music feature is enabled
         autoplay: true,                    // Try to autoplay (note: some browsers may block this)
-        musicUrl: "https://cs1.mp3.pm/listen/137226265/UjFLc0U5QlEyMEFsdXBqMy85eGsycGdEaVFTbEJhYlBBU1gxQ29mdWRTSXc0Q1FwNWptY0lKUStQMnZxTDV2NHQxZWZqRTE4eTVIRGRFd0tpWnN0Rjl4bXg4aDMwWlNhb2t2WC80OUU0SzNpditCZk9TaW1LaThUUFdsYXpuQUQ/Pavell_Venci_Venc_feat._Mihaela_Fileva_-_Lyubov_(mp3.pm).mp3", // Music streaming URL
+        romanceMusicUrl: "https://cs1.mp3.pm/listen/137226265/UjFLc0U5QlEyMEFsdXBqMy85eGsycGdEaVFTbEJhYlBBU1gxQ29mdWRTSXc0Q1FwNWptY0lKUStQMnZxTDV2NHQxZWZqRTE4eTVIRGRFd0tpWnN0Rjl4bXg4aDMwWlNhb2t2WC80OUU0SzNpditCZk9TaW1LaThUUFdsYXpuQUQ/Pavell_Venci_Venc_feat._Mihaela_Fileva_-_Lyubov_(mp3.pm).mp3", // Music streaming URL
+        eroticMusicPath: "./data/congratulations.mp3", // Local music file path (make sure to include the file in your project)
         startText: "🎵 Пусни музика",        // Button text to start music
         stopText: "🔇 Спри музиката",         // Button text to stop music
         volume: 0.4                        // Volume level (0.0 to 1.0)
